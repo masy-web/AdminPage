@@ -1,0 +1,38 @@
+
+<p style="color: green"><%= notice %></p>
+
+<h1>List Medicines</h1>
+<%= link_to "New medicine", new_medicine_path,class:"btn btn-success",style:"float:right; margin-bottom:10px;" %>
+<table class="table table-bordered">
+  <thead class="table-info">
+    <tr>
+      <th scope="col">Title</th>
+      <th scope="col">Description</th>
+      <th scope="col">Author</th>
+      <th scope="col" colspan="3">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @medicines.each do |medicine| %>
+    <tr>
+      <td><%= medicine.title %></td>
+      <td><%= medicine.description %></td>
+      <td><%= medicine.author %></td>
+      <td><div class="btn-group">
+              <%= link_to "Edit", edit_medicine_path(medicine),class:"btn btn-outline-warning" %>
+              <%= link_to 'Show', medicine,class:"btn btn-outline-info" %></div></td>
+          <td><%= button_to "Delete", medicine, method: :delete,data: { confirm: 'Are you sure?' },class:"btn btn-outline-danger" %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
+<!-- <div id="medicines">
+  <% @medicines.each do |medicine| %>
+    <%= render medicine %>
+    <p>
+      <%= link_to "Show this medicine", medicine %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New medicine", new_medicine_path %> -->
