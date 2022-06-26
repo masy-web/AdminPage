@@ -1,0 +1,35 @@
+
+<p style="color: green"><%= notice %></p>
+
+<h1 class="title">List User</h1>
+<%= link_to "New user", new_user_path,class:"btn btn-success",style:" margin-bottom:10px;" %>
+<table class="table table-bordered">
+  <thead class="table-info">
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">No Hp</th>
+      <th scope="col">Username</th>
+      <th scope="col">Password</th>
+      <th scope="col" colspan="3">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @users.each do |user| %>
+    <tr>
+      <td><%= user.name %></td>
+      <td><%= user.email %></td>
+      <td><%= user.noHp %></td>
+      <td><%= user.username %></td>
+      <td><%= user.password %></td>
+      <td><div class="btn-group">
+              <%= link_to "Edit", edit_user_path(user),class:"btn btn-outline-warning" %>
+              <%= link_to 'Show', user,class:"btn btn-outline-info" %></div></td>
+          <td><%= button_to "Delete", user, method: :delete,data: { confirm: 'Are you sure?' },class:"btn btn-outline-danger" %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
+
+
+

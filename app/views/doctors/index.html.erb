@@ -1,0 +1,33 @@
+
+<p style="color: green"><%= notice %></p>
+
+<h1 class="title">List Doctor</h1>
+<%= link_to "New Doctor", new_doctor_path,class:"btn btn-success",style:" margin-bottom:10px;" %>
+<table class="table table-bordered">
+  <thead class="table-info">
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">No Hp</th>
+      <th scope="col">Experience</th>
+      <th scope="col">Username</th>
+      <th scope="col">Password</th>
+      <th scope="col" colspan="3">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @doctors.each do |doctor| %>    <tr>
+      <td><%= doctor.name %></td>
+      <td><%= doctor.email %></td>
+      <td><%= doctor.noHp %></td>
+      <td><%= doctor.experience %></td>
+      <td><%= doctor.username %></td>
+      <td><%= doctor.password %></td>
+      <td><div class="btn-group">
+              <%= link_to "Edit", edit_doctor_path(doctor),class:"btn btn-outline-warning" %>
+              <%= link_to 'Show', doctor,class:"btn btn-outline-info" %></div></td>
+          <td><%= button_to "Delete", doctor, method: :delete,data: { confirm: 'Are you sure?' },class:"btn btn-outline-danger" %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>

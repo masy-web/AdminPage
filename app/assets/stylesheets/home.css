@@ -1,0 +1,230 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+body{
+    font-family: 'Comfortaa', cursive;
+}
+
+
+header{
+    height:65px;
+    padding-top:10px;
+}
+
+
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.header-left li {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    float: left;
+    text-decoration: none;
+    font-size:24px;
+    margin-left:20px;
+}
+
+.header-right{
+    margin-left:0;
+}
+
+.header-right li {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    float: right;
+    text-decoration: none;
+    font-size:24px;
+}
+
+.header-left a{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 27px;
+    color: #000000;
+}
+
+.header-right a{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 27px;
+    text-align:right;
+    color: #0080FF;
+}
+
+.home{
+    background-color: #0080FF;
+    padding:10px 25px;
+    border-radius:50px;
+    text-decoration: none;
+}
+
+.home:hover{
+    text-decoration: none;
+}
+
+.btnnav-bar{
+    border: 1px solid #ffffff;
+    padding:10px 25px;
+    border-radius:50px;
+}
+
+.btnnav-bar:hover{
+    border: 1px solid #0080FF;
+    padding:10px 25px;
+    border-radius:50px;
+    text-decoration: none;
+}
+
+
+
+
+.header-left .home{
+    color: white;
+}
+
+.logout{
+    border: 1px solid #0080FF;
+    padding:10px 25px;
+    border-radius:50px;
+}
+
+.header-right .login{
+    color: #0080FF;
+}
+
+.top-wrapper{
+height: 1000px;
+}
+
+.top-right{
+    width:1000px;
+    height: 600px;
+    float:right;
+}
+
+.top-right img{
+    padding-right:20px;
+    padding-top: 50px;
+}
+
+.top-left{
+    height: 800px;
+    width: auto;
+    float:left;
+}
+
+.left-welcome h3{
+
+    position: absolute;
+    width: 387px;
+    height: 90px;
+    left: 112px;
+    top: 300px;
+    
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 45px;
+}
+
+.left-welcome h4{
+    position: absolute;
+    width: 483px;
+    height: 81px;
+    left: 112px;
+    top: 402px;
+
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 27px;
+}
+.left-welcome span{
+    color: #0080FF;
+}
+
+.left-diagnoses h3{
+    font-style: normal;
+    width: 800px;
+    font-weight: 600;
+    font-size: 46px;
+    padding-top: 120px;
+    padding-left: 150px;
+    line-height: 60px;
+    margin-bottom: 30px;
+}
+
+.left-diagnoses span{
+    color: #0080FF;
+}
+
+.button-test{
+    background-color: #0080FF;
+    padding:20px 25px;
+    padding-right:70px;
+    border-radius:50px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 27px;
+    color: white;
+    margin-left:155px;
+}
+
+.button-test:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+    text-decoration:none;
+}
+img {
+  position: absolute;
+  width: 786px;
+  height: 655px;
+  left: 619px;
+  top: 89px;
+
+}
+li a{
+  text-decoration:none;
+
+}
+.table {
+  width: 80% ; 
+  padding: 100px;
+  margin-left:100px;
+}
+.btn-success {
+  margin-left:150px;
+}
+.title{
+  margin-left:100px;
+  margin-top:50Px;
+
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn  {
+    border: 1px solid #ffffff;
+    padding:10px 25px;
+    border-radius:50px;
+}
+.dropdown .dropbtn:hover{
+  border: 1px solid #0080FF;
+  padding:10px 25px;
+  border-radius:50px;
+  text-decoration: none;
+}

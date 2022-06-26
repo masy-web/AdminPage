@@ -1,18 +1,18 @@
-<nav class="navbar navbar-dark" style="background-color: #e3f2fd;">
-  <ul class="nav nav-pills nav-fill" >
-    <%= link_to 'Admin', root_path,  class:"navbar-brand",style:"color:#06283D;"  %>
 
-    <li class="nav-item">
-      <%= link_to 'Home', root_path,  class:"nav-link active"  %>
-    </li>
-    <li class="nav-item" style = "color:white;">
-      <%= link_to 'Article', articles_path,  class:"nav-link"  %>
-    </li>
-    <li class="nav-item">
-      <%= link_to 'Medicine', medicines_path,  class:"nav-link"  %>
-    </li>
-    <li class="nav-item">
-      
-    </li>
-  </ul>
-</nav>
+<header>
+  <div class="container">
+      <ul>
+        <div class="header-left">
+          <li><%= link_to 'Admin', root_path,  class:"home"  %></li>
+          <li><%= link_to 'Article', articles_path,  class:"btnnav-bar"  %></li>
+          <li><%= link_to 'Medicine', medicines_path,  class:"btnnav-bar"  %></li>
+          <li><%= link_to 'User', users_path,  class:"btnnav-bar"  %></li>
+          <li><%= link_to 'Doctor', doctors_path,  class:"btnnav-bar"  %></li>
+        </div>
+          
+        <div class="header-right">
+          <li><a class="logout" href="#">Logout</a></li>
+        </div>
+      </ul>
+  </div>
+</header>

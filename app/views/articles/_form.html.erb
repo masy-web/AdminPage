@@ -10,23 +10,42 @@
       </ul>
     </div>
   <% end %>
-
-  <div>
-    <%= form.label :title, style: "display: block" %>
-    <%= form.text_field :title %>
+<div class="container">
+  <form action="/action_page.php">
+  <div class="row">
+    <div class="col-25">
+      <%= form.label :title, style: "display: block" %>
+    </div>
+    <div class="col-75">
+      <%= form.text_field :title,id:"fname" ,name:"firstname", placeholder:"title"  %>
+    </div>
   </div>
-
-  <div>
-    <%= form.label :description, style: "display: block" %>
-    <%= form.text_area :description %>
+  <div class="row">
+    <div class="col-25">
+       <%= form.label :description, style: "display: block" %>
+    </div>
+    <div class="col-75">
+       <%= form.text_area :description,id:"subject", name:"subject", placeholder:"Write something.." ,style:"height:200px" %>
+    </div>
   </div>
-
-  <div>
-    <%= form.label :author, style: "display: block" %>
-    <%= form.text_field :author %>
+  <div class="row">
+    <div class="col-25">
+      <%= form.label :author, style: "display: block" %>
+    </div>
+    <div class="col-75">
+      <%= form.text_field :author,id:"fname" ,name:"firstname" ,placeholder:"title"  %>
+    </div>
   </div>
-
-  <div>
-    <%= form.submit %>
+  <br>
+  <div class="row">
+    <div class="col-25">
+      <%= form.submit %>
+    </div>
+    
   </div>
+</div>
+
+  
+
+
 <% end %>
